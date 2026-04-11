@@ -31,7 +31,7 @@ function create(NameObject)
 end
 
 -- fireclickdetector
-local function pfireclickd(path)
+function pfireclickd(path)
   local plr = game.Players.LocalPlayer
   local hrp = plr.Character and plr.Character:FindFirstChild("HumanoidRootPart")
     if not hrp then return end
@@ -44,7 +44,7 @@ local function pfireclickd(path)
 end
 
 -- firetouchinterest
-local function pfiretouchintrest(obj)
+function pfiretouchintrest(obj)
   local plr = game.Players.LocalPlayer
   local hrp = plr.Character and plr.Character:FindFirstChild("HumanoidRootPart")
   if not hrp then return end
@@ -57,7 +57,7 @@ local function pfiretouchintrest(obj)
 end
 
 -- fireproximitypromt
-local function pfireproxpromt(obj)
+function pfireproxpromt(obj)
   local plr = game.Players.LocalPlayer
   local hrp = plr.Character and plr.Character:FindFirstChild("HumanoidRootPart")
   if not hrp then return end
