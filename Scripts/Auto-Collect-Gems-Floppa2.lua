@@ -14,7 +14,7 @@ function CollectGems()
         for _, gemName in ipairs(gemNames) do
             local gem = workspace:FindFirstChild(gemName)
             if gem then
-                local touchPart = gem:FindFirstChild("TouchTouchterest")
+                local touchPart = gem:FindFirstChild("TouchInterest")
                 if touchPart then
                     pfiretouchintrest(touchPart)
                 end
