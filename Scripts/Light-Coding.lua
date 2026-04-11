@@ -44,7 +44,7 @@ local function pfireclickd(path)
 end
 
 -- firetouchinterest
-local function pfiretouchinteres(obj)
+local function pfiretouchintrest(obj)
   local plr = game.Players.LocalPlayer
   local hrp = plr.Character and plr.Character:FindFirstChild("HumanoidRootPart")
   if not hrp then return end
