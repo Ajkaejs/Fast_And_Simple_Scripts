@@ -18,7 +18,7 @@
   -- Print ⚠️ Warning to the console
   ```
   
-  err(text) -- WIP
+  err(text) - error message example : 
   ```lua
   LightCoding.err("Error")
   -- Print ❌ Error to the console
@@ -26,7 +26,7 @@
   
   service(NameService) -- get service example :
   ```lua
-  LightCoding.service(game.Players)
+  LightCoding.service("Players")
   -- get Players Service
   ```
   
@@ -35,19 +35,19 @@
   LightCoding.create("Part") -- Creates Part
   ```
   
-  pfireclickd(pathToObject) - Fire Click Detector example :
+  pfireclickd(ClickDetecto) - Fire ClickDetector example :
   ```lua
   LightCoding.pfireclickd(workspace.ClickDetector)
   -- fire click detector in workspace
   ```
   
-  pfiretouchintrest(object) - Fire TouchInterest - need object BasePart Class example : 
+  pfiretouchintrest(plr or obj, obj) - Fire TouchInterest - need object BasePart Class example : 
   ```lua
   LightCoding.pfiretouchintrest(game.Players.LocalPlayer.Character.HumanoidRootPart, workspace.Part)
   -- Fire TouchInterest in workspace.Part by using Player HumanoidRootPart
   ```
 
-  pfireproxpromt(object) -- Fire Proximity Prompt
+  pfireproxpromt(ProximityPrompt) -- Fire Proximity Prompt
   ```lua
   LightCoding.pfireproxpromt(workspace.ProximityPrompt)
   -- fire proximity prompt in workspace
