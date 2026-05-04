@@ -1,35 +1,36 @@
+local LightCoding= { }
 -- say (print)
 function say(text)
   print(text)
 end
-
+LightCoding.say = say
 -- warnmsg (warn)
 function warnmsg(text)
   warn(text)
 end
-
+LightCoding.warnmsg = warnmsg
 -- err (error)
 function err(text, lvl)
-  error(text, lvl)
+  if lvl == nil then
+    error(text)
+  else
+    error(text, lvl)
+  end
 end
-
--- erre (error only text(
-function erre(text)
-  error(text)
-end
+LightCoding.err = err
 
 -- service (GetService)
 function service(NameService)
   local service = game:GetService(NameService)
   return service
 end
-
+LightCoding.service = service
 -- create (Instance)
 function create(NameObject)
   local obj = Instance.new(NameObject)
   return obj
 end
-
+LightCoding.create = create
 -- fireclickdetector
 function pfireclickd(path)
   local plr = game.Players.LocalPlayer
@@ -42,9 +43,9 @@ function pfireclickd(path)
         if not success then return nil end
     end
 end
-
+LightCoding.pfireclickd = pfireclickd
 -- firetouchinterest
-local function pfiretouchinterest(touch, obj)
+function pfiretouchinterest(touch, obj)
     local plr = game.Players.LocalPlayer
     local hrp = plr.Character and plr.Character:FindFirstChild("HumanoidRootPart")
     if touch == plr then
@@ -64,7 +65,7 @@ local function pfiretouchinterest(touch, obj)
         if not success then return nil end
     end
 end
-
+LightCoding.pfiretouchinterest = pfiretouchinterest
 -- fireproximitypromt
 function pfireproxpromt(obj)
   local plr = game.Players.LocalPlayer
@@ -77,3 +78,5 @@ function pfireproxpromt(obj)
     if not succes then return nil end
   end
 end
+LightCoding.pfireproxpromt = pfireproxpromt
+return LightCoding
