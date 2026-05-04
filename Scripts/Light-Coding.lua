@@ -44,16 +44,25 @@ function pfireclickd(path)
 end
 
 -- firetouchinterest
-function pfiretouchintrest(obj)
-  local plr = game.Players.LocalPlayer
-  local hrp = plr.Character and plr.Character:FindFirstChild("HumanoidRootPart")
-  if not hrp then return end
-  if obj:IsA("TouchTransmitter") then
-  local succes, err = pcall(function()
-    firetouchinterest(hrp, obj.Parent, 0)
-    end)
-    if not succes then return nil end
-  end
+local function pfiretouchinterest(touch, obj)
+    local plr = game.Players.LocalPlayer
+    local hrp = plr.Character and plr.Character:FindFirstChild("HumanoidRootPart")
+    if touch == plr then
+      if not hrp then return end
+        if obj:IsA("BasePart") then
+            local success, err = pcall(function()
+                firetouchinterest(hrp, obj, 0)
+            end)
+            if not success then return nil end
+        end
+        return
+    end
+    if obj:IsA("BasePart") then
+        local success, err = pcall(function()
+            firetouchinterest(touch, obj, 0)
+        end)
+        if not success then return nil end
+    end
 end
 
 -- fireproximitypromt
