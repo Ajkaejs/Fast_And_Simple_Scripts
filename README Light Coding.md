@@ -35,19 +35,19 @@
   create("Part") -- Creates Part
   ```
   
-  pfireclickd(pathToObject) - Fire Click Detector need object path
+  pfireclickd(pathToObject) - Fire Click Detector example :
   ```lua
   pfireclickd(workspace.ClickDetector)
   -- fire click detector in workspace
   ```
   
-  pfiretouchintrest(object) - Fire Touch Interest (Touch Transmitter) - need object path
+  pfiretouchintrest(object) - Fire TouchInterest - need object BasePart Class example : 
   ```lua
-  pfiretouchintrest(workspace.Part.Touchintrest)
-  -- Fire Touch Interest in workspace.Part
+  pfiretouchintrest(game.Players.LocalPlayer.Character.HumanoidRootPart, workspace.Part)
+  -- Fire TouchInterest in workspace.Part by using Player HumanoidRootPart
   ```
 
-  pfireproxpromt(object) -- Fire Proximity Prompt need object path
+  pfireproxpromt(object) -- Fire Proximity Prompt
   ```lua
   pfireproxpromt(workspace.ProximityPrompt)
   -- fire proximity prompt in workspace
