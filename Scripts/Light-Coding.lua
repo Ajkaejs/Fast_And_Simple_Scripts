@@ -1,4 +1,4 @@
-local LightCoding= { }
+local LightCoding = { }
 -- say (print)
 function say(text)
   print(text)

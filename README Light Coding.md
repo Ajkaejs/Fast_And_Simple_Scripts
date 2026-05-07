@@ -41,9 +41,9 @@
   -- fire click detector in workspace
   ```
   
-  pfiretouchintrest(plr or obj, obj) - Fire TouchInterest - need object BasePart Class example : 
+  pfiretouchinterest(plr or obj, obj) - Fire TouchInterest - need object BasePart Class example : 
   ```lua
-  LightCoding.pfiretouchintrest(game.Players.LocalPlayer.Character.HumanoidRootPart, workspace.Part)
+  LightCoding.pfiretouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, workspace.Part)
   -- Fire TouchInterest in workspace.Part by using Player HumanoidRootPart
   ```
 
