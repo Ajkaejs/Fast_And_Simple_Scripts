@@ -1,5 +1,5 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Ajkaejs/Fast_And_Simple_Scripts/main/Scripts/Light-Coding.lua"))()
-
+local LightCoding = loadstring(game:HttpGet("https://raw.githubusercontent.com/AbobaLua/LightCoding/main/Source.lua"))()
+local pfiretouchinterest = LightCoding.pfiretouchinterest
 local gemNames = {"Diamond", "Emerald", "Ruby", "Sapphire"}
 local connection = nil
 
@@ -16,7 +16,7 @@ function CollectGems()
             if gem then
                 local touchPart = gem:FindFirstChild("TouchInterest")
                 if touchPart then
-                    pfiretouchintrest(touchPart)
+                    pfiretouchinterest(touchPart)
                 end
             end
         end

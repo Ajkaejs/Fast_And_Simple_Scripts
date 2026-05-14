@@ -1,20 +1,11 @@
+local LightCoding = loadstring(game:HttpGet("https://raw.githubusercontent.com/AbobaLua/LightCoding/main/Source.lua"))()
+local pfireclickd = LightCoding.pfireclickd
 local easterFolder = workspace.Easter.Every_Egg_Ever
 
 if not easterFolder then
 	return nil
 end
 local cureggs = 0
-local function pfireclickd(path)
-  local plr = game.Players.LocalPlayer
-  local hrp = plr.Character and plr.Character:FindFirstChild("HumanoidRootPart")
-    if not hrp then return end
-    if path:IsA("ClickDetector") then
-        local success, err = pcall(function()
-            fireclickdetector(path)
-        end)      
-        if not success then return nil end
-    end
-end
 
 local function setupClickDetectors(folder)
 	for _, obj in ipairs(folder:GetChildren()) do
@@ -22,7 +13,7 @@ local function setupClickDetectors(folder)
 		if clickDetector then
 				pfireclickd(clickDetector)
             cureggs = cureggs + 1
-            wait(0.00001)
+            task.wait()
 		else
         return nil
 		end
