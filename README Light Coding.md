@@ -3,7 +3,7 @@
   Make your coding easier!
   Loadstring :
   ```lua
-  local LightCoding = loadstring(game:HttpGet("https://raw.githubusercontent.com/Ajkaejs/Fast_And_Simple_Scripts/main/Scripts/Light-Coding.lua"))()
+  local LightCoding = loadstring(game:HttpGet("https://raw.githubusercontent.com/AbobaLua/Fast_And_Simple_Scripts/main/Scripts/Light-Coding.lua"))()
   ```
  ### Functions
   say(text) - print text example :
