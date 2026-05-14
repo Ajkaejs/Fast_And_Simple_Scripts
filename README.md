@@ -1,4 +1,4 @@
-# Fast And Simple Scripts Roblox
+# Fast And Simple Scripts Roblox(Exploit)
  Dream game Auto Collect Easter Eggs
  ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/AbobaLua/Fast-And-Simple-Scripts/main/Scripts/Auto-Collect-Easter-Eggs-Dream-Game.lua"))()
